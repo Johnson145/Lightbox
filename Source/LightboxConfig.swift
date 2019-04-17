@@ -20,7 +20,7 @@ public class LightboxConfig {
   public static var loadImage: (UIImageView, URL, ((UIImage?) -> Void)?) -> Void = { (imageView, imageURL, completion) in
 
     // Use Kingfisher by default
-    imageView.kf.setImage(with: urlObject)
+    imageView.kf.setImage(with: imageURL)
     {
         result in
         switch result {
