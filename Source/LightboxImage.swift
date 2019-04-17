@@ -1,5 +1,5 @@
 import UIKit
-import Imaginary
+import Kingfisher
 
 open class LightboxImage {
 
