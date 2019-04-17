@@ -7,13 +7,13 @@ Pod::Spec.new do |s|
   s.author           = { "Hyper Interaktiv AS" => "ios@hyper.no" }
   s.source           = { :git => "https://github.com/hyperoslo/Lightbox.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/hyperoslo'
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '10.0'  # increased from 9.0 to suite Kingisher 5.0
   s.requires_arc = true
   s.source_files = 'Source/**/*'
   s.ios.resource = 'Resources/Lightbox.bundle'
 
   s.frameworks = 'UIKit', 'AVFoundation', 'AVKit'
-  s.dependency 'Kingfisher'
+  s.dependency 'Kingfisher', '~> 5.0'
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 end
