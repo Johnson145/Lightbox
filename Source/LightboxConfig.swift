@@ -17,7 +17,7 @@ public class LightboxConfig {
   }
 
   /// How to load image onto UIImageView
-  public static var loadImage: (UIImageView, URL, ((UIImage?) -> Void)?) -> Void = { (imageView, imageURL, completion) in
+  public static var loadImage: (LightboxImage, UIImageView, URL, ((UIImage?) -> Void)?) -> Void = { (lightboxImage, imageView, imageURL, completion) in
 
     // Use Kingfisher by default
     imageView.kf.setImage(with: imageURL)
